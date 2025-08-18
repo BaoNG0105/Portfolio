@@ -5,12 +5,14 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import ProjectsSection from './sections/ProjectsSection';
 import CherryBlossom from './components/CherryBlossom'; // Import component hoa đào
-// import './styles/App.css'; // File CSS tổng thể
+import AudioPlayer from './components/AudioPlayer'; // Import component AudioPlayer
+import backgroundMusic from './assets/audio/music.mp3';  // Import file nhạc 
 
 function App() {
   return (
     <div className="App">
       <CherryBlossom /> {/* Thêm component hoa đào */}
+      <AudioPlayer src={backgroundMusic} /> {/* Thêm component audio */}
       <Header />
       {/* Thêm các section như About, Contact ở đây */}
       <main>

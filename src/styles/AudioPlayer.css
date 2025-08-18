@@ -1,0 +1,23 @@
+.audio-toggle-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: transparent; /* Xóa màu nền */
+    color: #ff8787; /* Đổi màu icon để dễ nhìn hơn, ví dụ màu đen */
+    border: none;
+    cursor: pointer;
+    font-size: 2rem; /* Tăng kích thước icon một chút */
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    z-index: 1000;
+    padding: 5px; /* Thêm chút đệm để dễ bấm hơn */
+    /* Xóa các thuộc tính không cần thiết cho khung tròn */
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+  }
+  
+  .audio-toggle-button:hover {
+    transform: scale(1.2); /* Hiệu ứng phóng to khi di chuột */
+    color: #ff4444; /* Đổi màu khi di chuột */
+  }
