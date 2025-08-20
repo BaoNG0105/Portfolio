@@ -3,56 +3,85 @@
 .footer {
     background-color: #333;
     color: white;
-    padding: 30px 5%;
+    padding: 40px 5%;
     text-align: center;
   }
-  
-  .footer p {
-    margin: 0;
-    font-size: 1rem;
-  }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: left;
+  margin-bottom: 30px;
+}
   
   .footer-info, .footer-contact {
     flex: 1;
-    margin: 10px;
-    min-width: 250px;
+    min-width: 300px;
   }
 
-  .footer-contact {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .footer-info h3, .footer-contact h3 {
+    font-family: 'Borel', cursive;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #ff8787;
   }
 
-  .footer-contact p {
+  .footer-contact h3, .footer-contact p {
+    text-align: center;
+  }
+  .footer-info p {
     margin-bottom: 10px;
     color: #ccc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
-  .footer-contact h3 {
-    font-family: 'Borel', cursive;
-    font-size: 50px;
-    margin-bottom: 10px;
+  .footer-social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .footer-social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
+  }
+
+  .footer-social-links a:hover {
     color: #ff8787;
+    transform: translateY(-3px);
+  }
+  
+  .footer-contact p {
+    margin-bottom: 15px;
+    color: #ccc;
   }
   
   .contact-form {
-    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
     width: 100%;
   }
   
   .contact-form input,
   .contact-form textarea {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ffffff;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #555;
     border-radius: 4px;
-    background-color: white;
+    background-color: #ffffff;
     color: black;
+    font-size: 1rem;
+  }
+
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #999;
   }
 
   .contact-form input:focus,
@@ -62,12 +91,14 @@
   }
   
   .contact-form button {
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 4px;
     background-color: #ff8787;
     color: white;
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
     transition: background-color 0.3s;
   }
   
@@ -76,8 +107,28 @@
   }
 
   .footer-copyright {
-    padding-top: 30px;
+    padding-top: 20px;
     margin-top: 20px;
-    font-size: 0.8rem;
+    border-top: 1px solid #555;
+    font-size: 0.9rem;
     color: #ccc;
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-info, .footer-contact {
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+    .footer-info p {
+      justify-content: center;
+    }
+    .footer-social-links {
+      justify-content: center;
+    }
   }
