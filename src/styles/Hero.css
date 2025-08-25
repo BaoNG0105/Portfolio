@@ -75,7 +75,7 @@
 .hero-text h2 {
   line-height: 1.2;
   margin-bottom: 0; 
-  animation: none; 
+  animation: slideInFromTop 1s ease-out 0s forwards; /* Hiệu ứng trượt vào từ trên */
 }
 
 .words-container {
