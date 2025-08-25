@@ -10,8 +10,8 @@ function Footer() {
         {/* Cột thông tin bên trái */}
         <div className="footer-info">
           <h3>contact info</h3>
-          <p><FaMapMarkerAlt /> FPT University, HCMC</p>
-          <p><FaEnvelope /> baongse183475@fpt.edu.vn</p>
+          <p><FaMapMarkerAlt /> Xo Viet Nghe Tinh Str.,Thanh My Tay Ward, HCMC</p>
+          <p><FaEnvelope /> ngogiabao01052004@gmail.com</p>
           <p><FaPhone /> (+84) 911 031 534</p>
           <div className="footer-social-links">
             <a href="https://www.facebook.com/gia.bao.010504" aria-label="Facebook"><FaFacebookF /></a>
