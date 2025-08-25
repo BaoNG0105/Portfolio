@@ -12,8 +12,20 @@ function Hero() {
       <div className="hero-text">
         <h2>こんにちは!</h2>
         <h1>Ngo Gia Bao</h1>
-        <h2>I'm a <span className="highlight">Frontend Developer</span></h2>
-        <p>A student of FPT University.</p>
+        <div className="hero-subtitle">
+          <h2>I'm a</h2>
+          <div className="words-container">
+            <div className="words">
+              <span className="word">BrSE</span>
+              <span className="word">Frontend Developer</span>
+              <span className="word">UI/UX Designer</span>
+              <span className="word">Photographer</span>
+              <span className="word">Traveler</span>
+              <span className="word">BrSE</span> {/* Duplicate first item for smooth loop */}
+            </div>
+          </div>
+        </div>
+        <p>A student of FPT University. where I am turning my passion for technology into reality, one project at a time. Welcome to my portfolio. </p>
         <div className="social-links">
           <a href="https://www.facebook.com/gia.bao.010504"><FaFacebookF /></a>
           <a href="https://www.instagram.com/_akiraa0105_/"><FaInstagram /></a>
@@ -22,7 +34,7 @@ function Hero() {
           <a href="https://github.com/BaoNG0105"><FaGithub /></a>
         </div>
         <div className="cta-container">
-        <a href="#projects" className="cta-button">Download CV</a>
+          <a href="#projects" className="cta-button">Download CV</a>
         </div>
       </div>
       {/* Thêm ảnh đại diện của bạn */}
