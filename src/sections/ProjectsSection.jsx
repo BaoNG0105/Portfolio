@@ -1,15 +1,16 @@
 import React from "react";
 import ProjectCard from '../components/ProjectCard';
 import '../styles/ProjectsSection.css';
+import skinneImage from '../assets/image/skinne.png'; // Import ảnh của bạn
 
 // Dữ liệu dự án, bạn có thể tách ra file JSON riêng để dễ quản lý
 const myProjects = [
     {
-      title: 'Dự án E-commerce',
-      description: 'Xây dựng giao diện cho một trang thương mại điện tử bằng React và Redux.',
-      imageUrl: 'https://via.placeholder.com/400x250', // Thay bằng ảnh dự án của bạn
-      liveUrl: 'https://example.com',
-      sourceUrl: 'https://github.com/your-username/project-1',
+      title: 'SKINNE - The Skincare Products Sales System',
+      description: 'A website designed to manage and sell skin care products.',
+      imageUrl: skinneImage, // Thay bằng ảnh dự án của bạn
+      liveUrl: 'https://skincare-products-sales-system-omega.vercel.app/',
+      sourceUrl: 'https://github.com/BaoNG0105/SkincareProductsSalesSystem',
     },
     {
       title: 'Trang quản lý công việc',
@@ -23,7 +24,7 @@ const myProjects = [
   function ProjectsSection() {
     return (
       <section id="projects" className="projects-section">
-        <h2>Các dự án của tôi</h2>
+        <h2>My Projects</h2>
         <div className="projects-grid">
           {myProjects.map((project, index) => (
             <ProjectCard key={index} {...project} />
