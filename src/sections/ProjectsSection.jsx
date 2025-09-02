@@ -1,7 +1,8 @@
 import React from "react";
 import ProjectCard from '../components/ProjectCard';
 import '../styles/ProjectsSection.css';
-import skinneImage from '../assets/image/skinne.png'; // Import ảnh của bạn
+import skinneImage from '../assets/image/skinne.png'; // Import ảnh dự án SKINNE
+import fcine from '../assets/image/fcine.jpg'; // Import ảnh dự án FCINE
 
 // Dữ liệu dự án, bạn có thể tách ra file JSON riêng để dễ quản lý
 const myProjects = [
@@ -13,11 +14,11 @@ const myProjects = [
       sourceUrl: 'https://github.com/BaoNG0105/SkincareProductsSalesSystem',
     },
     {
-      title: 'Trang quản lý công việc',
-      description: 'Ứng dụng giúp quản lý công việc hàng ngày, sử dụng React Hooks và Local Storage.',
-      imageUrl: 'https://via.placeholder.com/400x250',
+      title: 'FCINE - Movie Booking Website',
+      description: 'A movie booking website with user authentication and admin panel.',
+      imageUrl: fcine, // Thay bằng ảnh dự án của bạn
       liveUrl: 'https://example.com',
-      sourceUrl: 'https://github.com/your-username/project-2',
+      sourceUrl: 'https://git.fa.edu.vn/hcm25_cpl_js_java_01/group_01/movieproject_gr1',
     },
   ];
 
