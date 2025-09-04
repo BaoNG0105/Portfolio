@@ -1,16 +1,18 @@
 import React from "react";
 import '../styles/ActivitiesSection.css';
+import act1 from '../assets/image/act1.jpg';
+import act2 from '../assets/image/act2.jpg';
 
 const myActivities = [
     {
-        image: 'https://via.placeholder.com/200x150', // Thay thế bằng ảnh của bạn, ví dụ: biztechImg
-        title: 'FPT Edu Biztech 2024',
-        description: 'Tham gia với tư cách là thí sinh trong cuộc thi kinh doanh công nghệ FPT Edu Biztech 2024, nơi chúng tôi đã phát triển và trình bày một dự án sáng tạo.',
+        image: act1, // Thay thế bằng ảnh của bạn
+        title: 'Brother and Sister FPTU 2023',
+        description: 'Tham gia với tư cách là một Brother hỗ trợ các em sinh viên mới trong việc hòa nhập môi trường mới ở Đại Học FPT.',
     },
     {
-        image: 'https://via.placeholder.com/200x150', // Thay thế bằng ảnh của bạn
-        title: 'Tình nguyện viên Mùa Hè Xanh',
-        description: 'Tham gia chiến dịch Mùa Hè Xanh, góp phần vào các hoạt động cộng đồng và hỗ trợ các khu vực khó khăn.',
+        image: act2, // Thay thế bằng ảnh của bạn
+        title: 'Vietnam Study - Tour Program Summer FPTU 2023',
+        description: 'Hỗ trợ các bạn sinh viên quốc tế trong chương trình giao lưu văn hóa và học tập tại Đại Học FPT.',
     },
     // Thêm các hoạt động khác ở đây
 ];
@@ -20,17 +22,24 @@ function ActivitiesSection() {
       <section id="activities" className="activities-section">
         <h2>My Activities</h2>
         <div className="activities-container">
-          {myActivities.map((activity, index) => (
-            <div className="activity-item" key={index}>
-              <div className="activity-image">
+          {/* Cột bên trái cho hình ảnh */}
+          <div className="activities-images-column">
+            {myActivities.map((activity, index) => (
+              <div className="activity-image" key={`img-${index}`}>
                 <img src={activity.image} alt={activity.title} />
               </div>
-              <div className="activity-content">
+            ))}
+          </div>
+  
+          {/* Cột bên phải cho nội dung */}
+          <div className="activities-content-column">
+            {myActivities.map((activity, index) => (
+              <div className="activity-content-item" key={`content-${index}`}>
                 <h3>{activity.title}</h3>
                 <p>{activity.description}</p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
     );
