@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import ProjectsSection from './sections/ProjectsSection';
 import AboutMeSection from './sections/AboutMeSection';
+import ActivitiesSection from './sections/ActivitiesSection';
 import CherryBlossom from './components/CherryBlossom'; // Import component hoa đào
 import AudioPlayer from './components/AudioPlayer'; // Import component AudioPlayer
 import backgroundMusic from './assets/audio/music.mp3';  // Import file nhạc 
@@ -20,6 +21,7 @@ function App() {
         <Hero />
         {/* Các section khác */}
         <AboutMeSection/>
+        <ActivitiesSection />
         <ProjectsSection />
       </main>
       <Footer />
