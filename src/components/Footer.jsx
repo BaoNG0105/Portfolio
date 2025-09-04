@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube, FaGithub, FaPhone, FaEnv
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer id='contact' className="footer">
       <div className="footer-content">
         {/* Cột thông tin bên trái */}
         <div className="footer-info">
