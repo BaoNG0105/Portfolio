@@ -9,8 +9,8 @@ function ProjectCard({ title, description, imageUrl, liveUrl, sourceUrl }) {
           <h3>{title}</h3>
           <p>{description}</p>
           <div className="project-links">
-            <a href={liveUrl} target="_blank" rel="noopener noreferrer">Xem Demo</a>
-            <a href={sourceUrl} target="_blank" rel="noopener noreferrer">Mã nguồn</a>
+            <a href={liveUrl} target="_blank" rel="noopener noreferrer">View Demo</a>
+            <a href={sourceUrl} target="_blank" rel="noopener noreferrer">View Source Code</a>
           </div>
         </div>
       </div>
