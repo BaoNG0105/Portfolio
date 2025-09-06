@@ -2,6 +2,7 @@ import React from "react";
 import '../styles/ActivitiesSection.css';
 import act1 from '../assets/image/act1.jpg';
 import act2 from '../assets/image/act2.jpg';
+import act3 from '../assets/image/act3.jpg';
 
 const myActivities = [
     {
@@ -14,6 +15,11 @@ const myActivities = [
         title: 'Vietnam Study - Tour Program Summer FPTU 2023',
         description: 'Provided dedicated support to international students participating in academic and cultural exchange programs at FPT University, fostering cross-cultural understanding and enriching their overall experience.',
     },
+    {
+        image: act3,
+        title: 'Study Overseas Program - Malaysia FPTU 2023',
+        description: 'Actively participated in the Study Overseas Program in Malaysia, gaining valuable international exposure and enhancing my academic and cultural understanding through immersive experiences.',
+    }
     // Thêm các hoạt động khác ở đây
 ];
 
