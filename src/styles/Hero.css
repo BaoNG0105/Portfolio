@@ -159,13 +159,27 @@
     padding: 60px 5%;
   }
 
+  .social-links {
+    justify-content: center; /* Căn giữa các icon */
+  }
+
+
   .hero-text,
   .hero-image {
     max-width: 100%;
+    margin-right: 0; /* Reset margin */
+    margin-left: 0; /* Reset margin */
   }
 
   .hero-image {
     margin-top: 40px;
+  }
+  .hero-image img {
+    max-width: 300px; /* Giảm kích thước ảnh trên mobile */
+  }
+
+  .hero-subtitle {
+    justify-content: center; /* Căn giữa các chữ chạy */
   }
 }
 

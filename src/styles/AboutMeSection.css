@@ -84,6 +84,10 @@
   }
   
   @media (max-width: 768px) {
+    .about-me-section {
+      padding: 60px 5%; /* Giảm padding */
+    }
+    
     .about-me-content {
       flex-direction: column;
       text-align: center;

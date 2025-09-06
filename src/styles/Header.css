@@ -70,6 +70,11 @@
   padding: 0.5rem 0;
 }
 
+.nav-links a:hover {
+  color:#ff8787;
+  transition: color 0.3s;
+}
+
 .nav-links a::after {
   content: '';
   position: absolute;
@@ -88,6 +93,50 @@
 .nav-links a:hover {
   color:#ff8787;
   transition: color 0.3s;
+}
+
+/* Thêm icon cho menu di động */
+.menu-toggle {
+  display: none; /* Ẩn trên desktop */
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+  z-index: 1001; /* Đảm bảo icon luôn ở trên cùng */
+}
+
+/* Responsive cho Header */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Hiện trên mobile */
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px; /* Chiều cao của header */
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  .nav-links.active {
+    max-height: 300px; /* Chiều cao đủ để chứa các link */
+  }
+
+  .nav-links li {
+    padding: 1rem 0;
+  }
+
+  .nav-links a::after {
+    /* Ẩn gạch chân animation trên mobile */
+    display: none;
+  }
 }
 
 /* Define the slideRight animation */
