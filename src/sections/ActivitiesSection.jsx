@@ -18,31 +18,24 @@ const myActivities = [
 ];
 
 function ActivitiesSection() {
-    return (
-      <section id="activities" className="activities-section">
-        <h2>My Activities</h2>
-        <div className="activities-container">
-          {/* Cột bên trái cho hình ảnh */}
-          <div className="activities-images-column">
-            {myActivities.map((activity, index) => (
-              <div className="activity-image" key={`img-${index}`}>
-                <img src={activity.image} alt={activity.title} />
-              </div>
-            ))}
+  return (
+    <section id="activities" className="activities-section">
+      <h2>My Activities</h2>
+      <div className="activities-container">
+        {myActivities.map((activity, index) => (
+          <div className="activity-item" key={index}>
+            <div className="activity-image">
+              <img src={activity.image} alt={activity.title} />
+            </div>
+            <div className="activity-content">
+              <h3>{activity.title}</h3>
+              <p>{activity.description}</p>
+            </div>
           </div>
-  
-          {/* Cột bên phải cho nội dung */}
-          <div className="activities-content-column">
-            {myActivities.map((activity, index) => (
-              <div className="activity-content-item" key={`content-${index}`}>
-                <h3>{activity.title}</h3>
-                <p>{activity.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    );
-  }
+        ))}
+      </div>
+    </section>
+  );
+}
   
   export default ActivitiesSection;
