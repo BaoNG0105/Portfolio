@@ -7,12 +7,12 @@ const myActivities = [
     {
         image: act1, // Thay thế bằng ảnh của bạn
         title: 'Brother and Sister FPTU 2023',
-        description: 'Tham gia với tư cách là một Brother hỗ trợ các em sinh viên mới trong việc hòa nhập môi trường mới ở Đại Học FPT.',
+        description: 'Actively engaged as a Student Mentor, dedicated to helping new students acclimate to campus life, fostering a strong sense of community, and ensuring a positive start to their academic journey at FPT University.',
     },
     {
         image: act2, // Thay thế bằng ảnh của bạn
         title: 'Vietnam Study - Tour Program Summer FPTU 2023',
-        description: 'Hỗ trợ các bạn sinh viên quốc tế trong chương trình giao lưu văn hóa và học tập tại Đại Học FPT.',
+        description: 'Provided dedicated support to international students participating in academic and cultural exchange programs at FPT University, fostering cross-cultural understanding and enriching their overall experience.',
     },
     // Thêm các hoạt động khác ở đây
 ];
