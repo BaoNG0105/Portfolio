@@ -25,11 +25,11 @@ function Hero() {
             </div>
           </div>
         </div>
-        <p>A student of FPT University. where I am turning my passion for technology into reality, one project at a time. Welcome to my portfolio. </p>
+        <p>I love technology and I enjoy turning my passion into real projects. Welcome to my portfolio!</p>
         <div className="social-links">
           <a href="https://www.facebook.com/gia.bao.010504"><FaFacebookF /></a>
           <a href="https://www.instagram.com/_akiraa0105_/"><FaInstagram /></a>
-          <a href="#"><FaTiktok /></a>
+          <a href="https://www.tiktok.com/@akiraa01052004"><FaTiktok /></a>
           <a href="https://www.youtube.com/@akiraa0105"><FaYoutube /></a>
           <a href="https://github.com/BaoNG0105"><FaGithub /></a>
         </div>
