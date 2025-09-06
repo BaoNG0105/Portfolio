@@ -16,13 +16,12 @@ function App() {
       <CherryBlossom /> {/* Thêm component hoa đào */}
       <AudioPlayer src={backgroundMusic} /> {/* Thêm component audio */}
       <Header />
-      {/* Thêm các section như About, Contact ở đây */}
       <main>
         <Hero />
         {/* Các section khác */}
         <AboutMeSection/>
-        <ActivitiesSection />
         <ProjectsSection />
+        <ActivitiesSection />
       </main>
       <Footer />
     </div>
