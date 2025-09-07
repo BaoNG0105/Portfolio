@@ -86,7 +86,7 @@
 
 .words {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ff8787;
   letter-spacing: 1px;
   animation: spin 10s infinite; /* Apply animation to the container */
